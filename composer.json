@@ -6,9 +6,10 @@
     "authors": [
         {
             "name": "Carlos A.",
-            "email": "caralla@upv.es"
+            "homepage": "https://github.com/dealfonso"
         }
     ],
+    "minimum-stability": "dev",
     "require": {
         "php": ">=7.4"
     },
