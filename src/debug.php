@@ -81,7 +81,7 @@ class Debug extends Functions_Placeholder {
      * @param $message the message to output
      * @param $args the message is printed using sprintf, so this is included in case the output needs arguments (i.e. for %s, %d, etc.)
      */
-    private static function _p_debug($type, $force, $skip = 1, $msg, ...$args) {
+    private static function _p_debug($type, $force, $skip, $msg, ...$args) {
         if ($force || (defined('DEBUG') && DEBUG)) {
             $debug = debug_backtrace(DEBUG_BACKTRACE_PROVIDE_OBJECT, $skip + 2);
             while ($skip > 0) {
